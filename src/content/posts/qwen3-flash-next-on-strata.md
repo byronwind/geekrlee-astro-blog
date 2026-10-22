@@ -1,7 +1,7 @@
 ---
 title: "在四块 2080 Ti 上跑 Qwen3.8-Flash-Next（Strata）"
 author: "Lee"
-pubDatetime: 2026-10-22T09:00:00Z
+pubDatetime: 2026-10-22T00:00:00Z
 featured: false
 draft: false
 tags:
