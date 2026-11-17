@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 470" font-family="-apple-system,'Segoe UI','PingFang SC','Noto Sans SC',sans-serif">
+  <rect x="0" y="0" width="880" height="470" rx="14" fill="#0f172a" stroke="#1e293b"/>
+  <text x="28" y="42" font-size="19" font-weight="700" fill="#e2e8f0">租还是买：回本时间</text>
+  <text x="28" y="66" font-size="12.5" fill="#64748b">假设每月租用托管模型 $200 vs $20 · 作者算法 · 未计电费</text>
+
+  <!-- group 1 -->
+  <text x="210" y="104" font-size="13" font-weight="700" fill="#e2e8f0">$200 / 月</text>
+
+  <text x="28" y="136" font-size="12.5" fill="#cbd5e1">128GB Strix Halo（≈ $3,449）</text>
+  <rect x="210" y="120" width="99" height="24" rx="4" fill="#34d399"/>
+  <text x="317" y="137" font-size="12.5" font-weight="700" fill="#34d399">≈ 17 个月</text>
+
+  <text x="28" y="176" font-size="12.5" fill="#cbd5e1">2× DGX Spark（≈ $13,900）</text>
+  <rect x="210" y="160" width="420" height="24" rx="4" fill="#fbbf24"/>
+  <text x="638" y="177" font-size="12.5" font-weight="700" fill="#fbbf24">≈ 6 年（72 个月）</text>
+
+  <!-- group 2 -->
+  <text x="210" y="220" font-size="13" font-weight="700" fill="#e2e8f0">$20 / 月</text>
+
+  <text x="28" y="252" font-size="12.5" fill="#cbd5e1">128GB Strix Halo（≈ $3,449）</text>
+  <rect x="210" y="236" width="560" height="24" rx="4" fill="#f87171"/>
+  <text x="210" y="278" font-size="12.5" font-weight="700" fill="#f87171">基本回不了本</text>
+
+  <text x="28" y="316" font-size="12.5" fill="#cbd5e1">2× DGX Spark（≈ $13,900）</text>
+  <rect x="210" y="300" width="560" height="24" rx="4" fill="#f87171"/>
+  <text x="210" y="342" font-size="12.5" font-weight="700" fill="#f87171">基本回不了本</text>
+
+  <!-- callout -->
+  <rect x="28" y="356" width="824" height="88" rx="10" fill="#1e293b" stroke="#334155"/>
+  <text x="44" y="384" font-size="13" font-weight="700" fill="#e2e8f0">所以什么时候买才划算？</text>
+  <text x="44" y="410" font-size="12.5" fill="#cbd5e1">数据不能离开本机的时候。更实际的一步：先花几美分，把你真实的长提示交给托管大模型试一遍，</text>
+  <text x="44" y="434" font-size="12.5" fill="#cbd5e1">确认结果真的更好，再去买硬件。</text>
+</svg>
