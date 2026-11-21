@@ -1,12 +1,18 @@
 import { defineAstroPaperConfig } from "./src/types/config";
 
+// 部署差异通过构建时环境变量注入（同一份内容，多站点发布）：
+//   Cloudflare Pages : SITE_URL=https://blog.roadwalker.dpdns.org/（默认），不设 PUBLIC_ICP
+//   腾讯云 OpenResty  : SITE_URL=https://www.geekrlee.com/ + PUBLIC_ICP=<备案号>
+const SITE_URL = process.env.SITE_URL || "https://blog.roadwalker.dpdns.org/";
+const SITE_PROFILE = process.env.SITE_PROFILE || SITE_URL;
+
 export default defineAstroPaperConfig({
   site: {
-    url: "https://www.geekrlee.com/",
+    url: SITE_URL,
     title: "GEEKR.Lee",
     description: "Thinking & Walking & Writing about Technology & Life",
     author: "Lee",
-    profile: "https://www.geekrlee.com/",
+    profile: SITE_PROFILE,
     ogImage: "geekr.png",
     lang: "en",
     timezone: "Asia/Shanghai",

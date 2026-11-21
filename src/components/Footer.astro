@@ -11,6 +11,8 @@ const { noMarginTop = false, class: className, ...attrs } = Astro.props;
 
 const t = useTranslations(Astro.currentLocale);
 const currentYear = new Date().getFullYear();
+// 备案号只在需要备案的部署（腾讯云）注入；Cloudflare Pages 构建时不设置该变量
+const icp = import.meta.env.PUBLIC_ICP;
 ---
 
 <footer
@@ -27,14 +29,18 @@ const currentYear = new Date().getFullYear();
       <span>{t.footer.allRightsReserved}</span>
     </div>
   </div>
-  <div class="text-muted-foreground pb-4 text-center text-xs">
-    <a
-      href="https://beian.miit.gov.cn/"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="hover:text-accent"
-    >
-      京ICP备19006894号-1
-    </a>
-  </div>
+  {
+    icp && (
+      <div class="text-muted-foreground pb-4 text-center text-xs">
+        <a
+          href="https://beian.miit.gov.cn/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-accent"
+        >
+          {icp}
+        </a>
+      </div>
+    )
+  }
 </footer>
