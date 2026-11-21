@@ -2,11 +2,11 @@ import { defineAstroPaperConfig } from "./src/types/config";
 
 export default defineAstroPaperConfig({
   site: {
-    url: "https://geekrlee-blog.pages.dev/",
+    url: "https://www.geekrlee.com/",
     title: "GEEKR.Lee",
     description: "Thinking & Walking & Writing about Technology & Life",
     author: "Lee",
-    profile: "https://geekrlee-blog.pages.dev/",
+    profile: "https://www.geekrlee.com/",
     ogImage: "geekr.png",
     lang: "en",
     timezone: "Asia/Shanghai",
